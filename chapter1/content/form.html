@@ -1,0 +1,81 @@
+<html lang=""km> <!-- Form.html -->
+
+    <head>
+        <title>សំណុំបែបបទ</title>
+
+        <style type="text/css">
+            .ibutton{
+                border-radius: 8px;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        
+        <ul> <!-- Menu គឺបញ្ជីរាយតំណដោយប្រើ មេធាតុ ul កូនធាតុ li និង ចៅធាតុ al -->
+            <li> <a href="#" id="active">ទំព័រដើម</a> </li>
+            <li> <a href="content/head_and_text.html">ចំណងជើងនិងអត្ថបទ</a> </li>
+            <li> <a href="content/formating_text.html">ទ្រង់ទ្រាយអត្ថបទ</a> </li>
+            <li> <a href="content/list.html">បញ្ជី</a> </li>
+            <li> <a href="content/table.html">តារាង</a> </li>
+            <li> <a href="content/form.html">សំណុំបែបបទ</a> </li>
+        </ul>
+
+        <h1>សំណុំបែបបទ form</h1>
+        <form action = "អាស័យដ្ឋានអ្នកទទួល" method="get">
+            <div>
+                <table for="txt">ប្រអប់អត្ថបទ</table>
+                <input type="text" id="txt" name="txt">
+            </div>
+        </form>
+
+        <!-- Dropdown element -->
+
+        <div>
+            <label for="ddl">ប្រអប់ទម្លាក់ជម្រើស</label>
+            <select id="ddl" name="ddl">
+                <option value="1">ជម្រើសទី1</option>
+                <option value="2">ជម្រើសទី2</option>
+                <option value="3">ជម្រើសទី3</option>
+            </select>
+        </div>
+
+        <!-- CheckBox element -->
+
+        <div>
+            <label for="chk1">ប្រអប់ទឹកទី១</label>
+            <input type="checkbox" id="chk1" name="chk1" value="c1">
+            
+            <label for="chk2">ប្រអប់ប្រអប់ទឹកទី២</label>
+            <input type="checkbox" id="chk2" name="chk2" value="c2">
+            
+            <label for="chk3">ប្រអប់ប្រអប់ទឹកទី៣</label>
+            <input type="checkbox" id="chk3" name="chk3" value="c3">
+        </div>
+
+        <!-- Radio element -->
+
+        <div>
+            <label for="rdo1">ប្រអប់ទឹកទី១</label>
+            <input type="radio" id="rdo1" name="rdo1" value="rdo">
+            
+            <label for="rdo2">ប្រអប់ប្រអប់ទឹកទី២</label>
+            <input type="radio" id="rdo2" name="rdo2" value="rdo">
+            
+            <label for="rdo3">ប្រអប់ប្រអប់ទឹកទី៣</label>
+            <input type="radio" id="rdo3" name="rdo3" value="rdo">
+        </div>
+
+        <!-- Button element -->
+
+        </div >
+            <input class="ibutton" type="button" id="btn" name="btn" value="ប៊ូតុង button">
+            <input class="ibutton" type="reset" id="rst" name="rst" value="សាថ្មី reset">
+            <input class="ibutton" type="submit" id="smt" name="smt" value="បញ្ជូន submit">
+        <div>
+
+        </div>
+    </body>
+</html>

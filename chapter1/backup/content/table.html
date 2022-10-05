@@ -1,0 +1,51 @@
+<html lang=""km> <!-- Table.html -->
+
+    <head>
+        <title>តារាង</title>
+        <style type="text/css">
+
+            /* ជ្រើស tr ដែលជាកូនធាតុទី១។ */
+
+            tr:nth-child(1){
+                font-family: 'Khmer';
+                background-color: black;
+                color: white;
+            }
+
+            /* ជ្រើស tr ដែលជាកូនធាតុមានលំដាប់រៀងគូរៗ ២, ៤, ៦, ..ល។ */
+            tr:nth-child(2n){
+                background-color: lightgrey;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <ul> <!-- Menu គឺបញ្ជីរាយតំណដោយប្រើ មេធាតុ ul កូនធាតុ li និង ចៅធាតុ al -->
+            <li> <a href="#" id="active">ទំព័រដើម</a> </li>
+            <li> <a href="content/head_and_text.html">ចំណងជើងនិងអត្ថបទ</a> </li>
+            <li> <a href="content/formating_text.html">ទ្រង់ទ្រាយអត្ថបទ</a> </li>
+            <li> <a href="content/list.html">បញ្ជី</a> </li>
+            <li> <a href="./table.html">តារាង</a> </li>
+            <li> <a href="content/form.html">សំណុំបែបបទ</a> </li>
+        </ul>
+
+        <table border="1">
+            <tr>
+                <th>ល.រ</th><th>ឈ្មោះ</th><th>ទូរស័ព្ទ</th>
+            </tr>
+            <tr>
+                <th>១</th><th>ខន ដាវៀត</th><th>០១១៧២៥២២៨</th>
+            </tr>
+            <tr>
+                <th>២</th><th>ជុំ ម៉ាប់</th><th>០១១១២៣៤៥៦</th>
+            </tr>
+            <tr>
+                <th>៣</th><th>ចាន់ ម៉ុន្នីនាថ</th><th>០១១៤៦០០៧៨</th>
+            </tr>
+        </table>
+
+        <!-- Table តាងតារាង tr តាងជួរដេកនៃតារាង (table row) th តាងក្បាលតារាងឬឈ្មោះជួរឈរ (table header) td តាងក្រឡាទិន្នន័យ (table data)-->
+
+    </body>
+</html>
