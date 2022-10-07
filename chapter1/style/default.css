@@ -2,3 +2,54 @@
     margin: 0;
     padding: 0;;
 }
+
+html{
+    font: 16px suwannaphum;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 16px 0;
+    font-family: 'Noto Sans Khmer', sans-serif;
+    
+    padding-left: 48px;
+}
+
+ul, ol, table, form, p {
+    padding-left: 80px;
+}
+
+.hmenu {
+    list-style-type: none;
+    background-color: black;
+    padding: 8px;
+}
+
+.hmneu li {
+    display: inline-block;
+    width: 14%;
+}
+
+.hmenu a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 12px 0 0px;
+}
+
+.hmenu a:hover {
+    background-color: gray;
+}
+
+.album {
+    list-style: none; 
+    width: 600px;
+    margin: 0 auto;
+}
+
+.album img {
+    width: 600px;
+    height: 350px;
+    border-radius: 6px;
+}
