@@ -53,3 +53,56 @@ ul, ol, table, form, p {
     height: 350px;
     border-radius: 6px;
 }
+
+#tb1 {
+    width: 450px;
+    margin: 16px auto 0;
+    border-collapse: collapse;
+}
+
+#tb1 th, #tb1 td {
+    padding: 8px 16px;
+}
+
+#tb1 th:nth-child(1) {
+    border-top-left-radius: 8px;
+}
+
+#tb1 th:nth-child(3) {
+    border-top-left-radius: 8px;
+}
+
+#tb1 th:nth-child(1) {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+#tb1 tr:nth-child(2n) {
+    background-color: lightgrey;
+}
+
+#frm {
+    width: 418px;
+    margin: 16px auto;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 0 24px 24px 32px;
+}
+
+#frm h2{
+    margin: 0 0 16px;
+    padding: 12px 0 4px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+#chk label, #rdo label {
+    display: inline;
+}
+
+.ibutton {
+    width: 31%;
+    margin: 8px 5px 0 0;
+}
