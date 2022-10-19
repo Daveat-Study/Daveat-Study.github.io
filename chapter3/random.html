@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>លេខចៃដន្យចន្លោះ៥និង១៤</title>
+        <style type="text/css">
+            img{
+                display: block;
+                background-color: greenyellow;
+                padding: 10px;
+                width: 300px;
+                height: 300px;
+                border: 1px solid gray;
+                border-radius: 50%;
+                margin: 32px auto;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <span>
+            <img src="https://i2-prod.dailystar.co.uk/incoming/article26515496.ece/ALTERNATES/s1200c/1_Alien-illustration.jpg">
+        </span>
+        <span id="rnd">
+            15
+        </span>
+        <script type="text/javascript">
+            window.setInterval(function(){
+                document.getElementById("rnd").textContent = Math.floor(Math.random() * 10) + 5;
+            }, 1000);
+        </script>
+    </body>
+</html>
