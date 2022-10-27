@@ -1,6 +1,7 @@
 <html>
     <head>
-
+        <!-- <style type="text/css" src="./default.css"></style> -->
+        <link rel="stylesheet" href="./default.css">
     </head>
 
     <body>
@@ -8,42 +9,62 @@
 
             <img id="feature" src="../chapter1/img/RUPP-Royal-University-of-Phnom-Penh1.jpeg", alth="អគារA">
             <p id="caption">អគារA</p>
+            
             <ul class="album">
                 <li>
-                    <img id="feature" src="../chapter1/img/RUPP-Royal-University-of-Phnom-Penh1.jpeg", alth="អគារA">
+                    <img src="../chapter1/img/RUPP-Royal-University-of-Phnom-Penh1.jpeg", alth="អគារA">
                 </li>
         
                 <li>
-                    <img id="feature" src="../chapter1/img/RUPP-Royal-University-of-Phnom-Penh1.jpeg", alth="អគារA">
+                    <img src="../chapter1/img/RUPP-Royal-University-of-Phnom-Penh1.jpeg", alth="អគារB">
                 </li>
         
                 <li>
-                    <img id="feature" src="../chapter1/img/RUPP-Royal-University-of-Phnom-Penh1.jpeg", alth="អគារA">
+                    <img src="../chapter1/img/RUPP-Royal-University-of-Phnom-Penh1.jpeg", alth="អគារC">
                 </li>
                 
                 <li>
-                    <img id="feature" src="../chapter1/img/RUPP-Royal-University-of-Phnom-Penh1.jpeg", alth="អគារA">
+                    <img src="../chapter1/img/RUPP-Royal-University-of-Phnom-Penh1.jpeg", alth="អគារD">
                 </li>
             </ul>
+            
             <p id="dynamic" style="font:24px times; background-color: yellow;"> </p>
         
         </div>
         <script>
-            let feature = document.querySelector("#feature");
-            let dynamic = document.querySelector("#dynamic");
-            document.textContent = feature.getAttribute("src")
-            let imgs = document.querySelectorAll(".album img");
-            // length ជា property សម្រាប់ប្រាប់ពី array size.s
-            dynamic.textContent = imgs.length;
-            dynamic.textContent = imgs[2].getAttribute("alt");
 
-            for(let i = 0; i < imgs.length; i++){
-                dynamic.textContent = dynamic.innerHTML + "<br>" + imgs[i].getAttribute("src");
-            }
+            let imgs = document.querySelectorAll(".album img");
+            let feature = document.querySelector("#feature");
+            let caption = document.querySelector("#caption");
+
+            let i = 1;
             
-            imgs.forEach( function(element, index, imgs){
-                dynamic.innerHTML = dynamic.innerHTML + "<hr>" + img.getAttribute("alt");
-            })
+            window.setInterval(function(){
+                caption.textContent = imgs[i].getAttribute("alt");
+                feature.setAttribute("src", imgs[i].getAttribute("src"));
+
+                if (i == imgs.length-1){
+                    i = 0;
+                } else {
+                    i++;
+                }
+            }, 1000);
+
+            // let feature = document.querySelector("#feature");
+            // let dynamic = document.querySelector("#dynamic");
+            // document.textContent = feature.getAttribute("src")
+            // let imgs = document.querySelectorAll(".album img");
+            // // length ជា property សម្រាប់ប្រាប់ពី array size.s
+            // dynamic.textContent = imgs.length;
+            // dynamic.textContent = imgs[2].getAttribute("alt");
+
+            // for(let i = 0; i < imgs.length; i++){
+            //     dynamic.textContent = dynamic.innerHTML + "<br>" + imgs[i].getAttribute("src");
+            // }
+            
+            // imgs.forEach( function(element, index, imgs){
+            //     dynamic.innerHTML = dynamic.innerHTML + "<hr>" + img.getAttribute("alt");
+            // })
         </script>
     </body>
 </html>

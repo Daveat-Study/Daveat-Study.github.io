@@ -1,0 +1,141 @@
+.cover {
+    width: 502px; margin: 16px auto;
+}
+
+#feature {
+    width: 500px;
+    height: 350px;
+    border: 1px solid black;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+#caption {
+    color: white;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 29px;
+}
+
+.album {
+    padding: 0;
+    margin: 0;
+
+}
+
+.album li {
+    display: inline-block;
+    color: red;
+}
+
+/*Select Active Index*/
+.album li:nth-child(n+2) { margin-left: 5px; }
+.album li:nth-child(1) {border: 1 red;}
+
+.album img {
+    width: 500px / 4;
+    height: 40px;
+}
+
+/* *{
+    margin: 0;
+    padding: 0;;
+}
+
+html{
+    font: 16px suwannaphum;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 16px 0;
+    font-family: 'Noto Sans Khmer', sans-serif;
+    
+    padding-left: 48px;
+}
+
+ul, ol, table, form, p {
+    padding-left: 80px;
+}
+
+.hmenu {
+    list-style-type: none;
+    background-color: black;
+    padding: 8px;
+}
+
+.hmneu li {
+    display: inline-block;
+    width: 14%;
+}
+
+.hmenu a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 12px 0 0px;
+}
+
+.hmenu a:hover {
+    background-color: gray;
+}
+
+.album {
+    list-style: none; 
+    width: 600px;
+    margin: 0 auto;
+}
+
+#tb1 {
+    width: 450px;
+    margin: 16px auto 0;
+    border-collapse: collapse;
+}
+
+#tb1 th, #tb1 td {
+    padding: 8px 16px;
+}
+
+#tb1 th:nth-child(1) {
+    border-top-left-radius: 8px;
+}
+
+#tb1 th:nth-child(3) {
+    border-top-left-radius: 8px;
+}
+
+#tb1 th:nth-child(1) {
+    font-family: 'Noto Sans Khmer', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+#tb1 tr:nth-child(2n) {
+    background-color: lightgrey;
+}
+
+#frm {
+    width: 418px;
+    margin: 16px auto;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 0 24px 24px 32px;
+}
+
+#frm h2{
+    margin: 0 0 16px;
+    padding: 12px 0 4px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+#chk label, #rdo label {
+    display: inline;
+}
+
+.ibutton {
+    width: 31%;
+    margin: 8px 5px 0 0;
+} */
