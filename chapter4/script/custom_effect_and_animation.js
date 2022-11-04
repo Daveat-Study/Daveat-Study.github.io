@@ -4,5 +4,5 @@ jQuery(function(){
     $("#cea").animate({left: "0", top: "0"}, 2000);
     $("#cea").animate({width: "256px", height: "256px"}, 2000);
     $("#cea").animate({width: "128px", height: "128px"}, 2000);
-    $("#cea").animate({opacity: "0.5"}, 2000);
+    $("#cea").animate({opacity: "0"}, 5000); // Opacity កំណត់ភាពច្បាស់មានតម្លៃចន្លោះ 0 និង 1
 })
