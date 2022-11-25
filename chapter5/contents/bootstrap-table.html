@@ -1,0 +1,53 @@
+<!-- Table 25/Nov/22 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta is data about data ទិន្នន័យស្តីអំពីទិន្នន័យ -->
+        <!-- In HTML, Meta ជាធាតុ១ដែលប្រើសម្រាប់បញ្ចាក់ទិន្នន័យឬបន្ថែម -->
+        <meta charset="utf-8">
+        <!-- charset is សំណុំនៃលេខដែលតាងអោយអក្សរនិងសញ្ញា -->
+        <!-- 
+            U: Unicode
+            T: Tranformation
+            F: Format 
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- initial-scale=1: 100% screen and no need ពង្រីកឬបង្រួម -->
+        <title>Bootstrap Table</title>
+        <link href="../css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+        </table>
+        <script src="./script/bootstrap.bundle.js"></script>
+    </body>
+</html>

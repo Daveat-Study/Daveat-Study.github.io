@@ -1,0 +1,100 @@
+<!-- Form 25/Nov/22 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta is data about data ទិន្នន័យស្តីអំពីទិន្នន័យ -->
+        <!-- In HTML, Meta ជាធាតុ១ដែលប្រើសម្រាប់បញ្ចាក់ទិន្នន័យឬបន្ថែម -->
+        <meta charset="utf-8">
+        <!-- charset is សំណុំនៃលេខដែលតាងអោយអក្សរនិងសញ្ញា -->
+        <!-- 
+            U: Unicode
+            T: Tranformation
+            F: Format 
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- initial-scale=1: 100% screen and no need ពង្រីកឬបង្រួម -->
+        <title>Bootstrap Form</title>
+        <link href="../css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <h1 class="text-center">Bootstrap Form</h1>
+
+        <form>
+
+            <div>
+                <label for="txt" class="form-label">Text box</label>
+                <input type="text" id="txt" name="txt" class="form-control-md-3">
+            </div>
+
+            <div>
+                <label for="pwd" class="form-label">Password</label>
+                <input type="password" id="pwd" name="pwd" class="form-control-md-3">
+            </div>
+
+            <div>
+                <label for="pwd" class="form-label">Text_area(multiple line text-box)</label>
+                <textarea id="txts" name="pwd" class="form-control-md-3"></textarea>
+            </div>
+            
+            <!-- Form List -->
+
+            <div>
+                <label for="lst" class="form-label">List Box</label>
+                <select id="lst" name="lst" class="form-select" multiple>
+                    <option>Choice 1</option>
+                    <option>Choice 2</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="ddl" class="form-label">Dropdown</label>
+                <select id="ddl" name="ddl" class="form-select">
+                    <option>Choice 1</option>
+                    <option>Choice 2</option>
+                </select>
+            </div>
+            
+            <!-- Default Radio -->
+            
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="rdo" id="rdo1">
+                <label for="rdo1" class="form-check-label">Radio 1</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="rdo" id="rdo2">
+                <label for="rdo2" class="form-check-label">Radio 2</label>
+            </div>
+
+            <!-- Default Radio -->  <!-- Form List -->
+
+            <div class="from-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="chk" id="chk1">
+                <label for="chk1" class="form-check-label">Check 1</label>
+            </div>
+
+            <div class="from-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="chk" id="chk2">
+                <label for="chk2" class="form-check-label">Check 2</label>
+            </div>
+
+            <!-- inline radio -->
+            
+            <div class="from-check form-check-inline">
+                <input class="form-check-input" type="radio" name="rdo" id="rdo1">
+                <label for="rdo1" class="form-check-label">Radio 1</label>
+            </div>
+
+            <div class="from-check form-check-inline">
+                <input class="form-check-input" type="radio" name="rdo" id="rdo2">
+                <label for="rdo2" class="form-check-label">Radio 2</label>
+            </div>
+            
+
+        </form>
+
+        <script src="./script/bootstrap.bundle.js"></script>
+    </body>
+</html>
